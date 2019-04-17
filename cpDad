@@ -1,0 +1,18 @@
+#!/bin/sh
+
+echo "Comecou ... "
+date > /home/horaciocome1/relatorio/cpDad
+cp -Rap /run/media/horaciocome1/BASEMENT/PAPA1/* /run/media/horaciocome1/HORACIO/
+date > /home/horaciocome1/relatorio/cpDad
+
+sleep 1
+
+umount /dev/sdb
+
+sleep 1
+echo
+echo "ja vou"
+
+sleep 10
+
+shutdown -h now

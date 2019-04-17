@@ -1,0 +1,52 @@
+#!/bin/sh
+
+# este script vai copiar filmes para o flash e depois desligar pc
+#mkdir /run/media/horaciocome1/DATASHIP/teste testando
+#sleep 1
+
+mkdir /home/horaciocome1/relatorio
+sleep 1
+
+echo "Copiando Filme 1 ... "
+echo "O que e o Verdadeiro Amor" > /home/horaciocome1/relatorio/Filmes
+date >> /home/horaciocome1/relatorio/Filmes
+cp -Rap /run/media/horaciocome1/SURFACE/Filmes/'O Que e o Verdadeiro Amor?' /run/media/horaciocome1/SHIP
+sleep 1
+date >> /home/horaciocome1/relatorio/Filmes
+echo >> /home/horaciocome1/relatorio/Filmes
+sleep 2
+
+mkdir /run/media/horaciocome1/SHIP/paraDistrair
+sleep 1
+
+echo "Copiando Filme 2 ... "
+echo "Surfs.Up.2.WaveMania.2017" >> /home/horaciocome1/relatorio/Filmes
+date >> /home/horaciocome1/relatorio/Filmes
+cp -Rap /run/media/horaciocome1/SURFACE/Filmes/Surfs.Up.2.WaveMania.2017.1080p.WEB-DL.DD5.1.H264-FGT /run/media/horaciocome1/SHIP/paraDistrair
+sleep 1
+date >> /home/horaciocome1/relatorio/Filmes
+echo >> /home/horaciocome1/relatorio/Filmes
+sleep 2
+
+echo "Copiando Filme 3 ... "
+echo "Monster.Trucks.2016" >> /home/horaciocome1/relatorio/Filmes
+date >> /home/horaciocome1/relatorio/Filmes
+cp -Rap /run/media/horaciocome1/SURFACE/Filmes/Monster.Trucks.2016.1080p.BluRay.H264.AAC-RARBG /run/media/horaciocome1/SHIP/paraDistrair
+sleep 1
+date >> /home/horaciocome1/relatorio/Filmes
+echo >> /home/horaciocome1/relatorio/Filmes
+
+echo "Copiando ColdPlay ... "
+echo "ColdPlay" >> /home/horaciocome1/relatorio/Filmes
+date >> /home/horaciocome1/relatorio/Filmes
+cp  -Rap /run/media/horaciocome1/SURFACE/Music/ColdPlay /run/media/horaciocome1/SHIP/paraDistrair
+sleep 1
+date >> /home/horaciocome1/relatorio/Filmes
+echo >> /home/horaciocome1/relatorio/Filmes
+sleep 2
+
+umount /dev/sdb1
+
+echo "terminei. adeus"
+sleep 10
+shutdown -h now
